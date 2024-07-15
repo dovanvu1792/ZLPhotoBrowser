@@ -668,5 +668,8 @@ extension ZLImagePreviewController: UICollectionViewDataSource, UICollectionView
      public func getBottomView() -> UIView{
         return bottomView
     }
+     public func getViewController() -> UIViewController{
+        return self
+    }
     
 }

@@ -659,4 +659,14 @@ extension ZLImagePreviewController: UICollectionViewDataSource, UICollectionView
         let cancelAction = ZLCustomAlertAction(title: localLanguageTextValue(.cancel), style: .cancel, handler: nil)
         showAlertController(title: nil, message: nil, style: .actionSheet, actions: [saveAction, cancelAction], sender: self)
     }
+
+    
+    public func getCurrentIndex() -> Int{
+        return currentIndex
+    }
+
+     public func getBottomView() -> UIView{
+        return bottomView
+    }
+    
 }
